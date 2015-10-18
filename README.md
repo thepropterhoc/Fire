@@ -15,16 +15,16 @@ _Requirements_
 
 ##Quickstart
 
->python fires.py
+> python fires.py
 >
->_Beginning prediction_
+> _Beginning prediction_
 >
->_302 Correct predictions_
->_163 Incorrect predictions_
->_34 False Positives (Predicted fire but actually not)_
->_0 False Negatives (Predicted no fire, actually was)_
->_62 Near misses (Off by 1 class)_
->_67 Severe misses (off by more than 1 class)_
+> _302 Correct predictions_
+> _163 Incorrect predictions_
+> _34 False Positives (Predicted fire but actually not)_
+> _0 False Negatives (Predicted no fire, actually was)_
+> _62 Near misses (Off by 1 class)_
+> _67 Severe misses (off by more than 1 class)_
 
 
 ##Overview
