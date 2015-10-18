@@ -39,10 +39,17 @@ First and foremost, nothing has been written here that has not already been inve
 
 After some initial attempts to simply replicate results obtained from the discussion on the UCI page mentioned above, it seemed to be apparent that while the predicted values were close, they didn't give any particularly useful information in terms of the _general severity_ of a coming fire.  This is where I decided to instead group the values together into somewhat arbitrary categories.  Where it gets more interesting, however, is how close these arbitrary categories actually are to what a real-world firefighter might want. 
 
-###Differences
+##Differences
 The dataset, while incredibly clean, actually needed some slight modification from its initial form.  I first started by cleaning all values within the enclosed .csv file by removing any commas and unnecessary formatting as well as sorting the data by output area burned (usefor for finding these arbitrary classes).
 
 Careful, since I sorted on output area, we have to **>>>random.shuffle()** the data after we read it in.  We're allowed to get away with this since there aren't too many rows to hold in memory.
 
-From here, I also decided to discretize the 'day' and 'month' values in the set into appropriate integers spread over the appropriate numbers of features (e.g. Monday -> 1 -> (1, 0, 0, 0, 0, 0, 0), March -> 3 -> (0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)).  This seemed to be a more accurate way of giving our SVM the data vs. weighting months.  Give it more neurons? Wait, wrong classifier... </sarcasm>
+From here, I also decided to discretize the 'day' and 'month' values in the set into appropriate integers spread over the appropriate numbers of features (e.g. Monday -> 1 -> (1, 0, 0, 0, 0, 0, 0), March -> 3 -> (0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)).  This seemed to be a more accurate way of giving our SVM the data vs. weighting months.  Give it more neurons? Wait, wrong classifier... 
+
+##Results
+After running the above quickstart a couple times to get an idea how the set might perform in the wild, it's actually striking how well it performed with so few data points. 
+
+In the five runs as a first inspection, _the predictor never missed a fire_.  Meaning, if there was going to be a fire at any point, it will tell you so.  However, it does come at a cost of predicting fire when there is not going to be one.  
+
+
 
