@@ -13,6 +13,19 @@ _Requirements_
 
 **Special thanks to Cortez and Morais for their data collection and work as well as the UCI Machine Learning Repository**
 
+##Quickstart
+
+>python fires.py
+>
+>_Beginning prediction_
+>
+>_302 Correct predictions_
+>_163 Incorrect predictions_
+>_34 False Positives (Predicted fire but actually not)_
+>_0 False Negatives (Predicted no fire, actually was)_
+>_62 Near misses (Off by 1 class)_
+>_67 Severe misses (off by more than 1 class)_
+
 
 ##Overview
 First and foremost, nothing has been written here that has not already been investigated by Cortez and Morais in their generous donation of the above-referenced data set out of the UCI Machine Learning repository.  I instead sought to expand their classification system employed to move away from a regression system instead to a more classification-oriented design that seeks to output a _'level of severity'_ of fire as opposed to continuous prediction of land area burned. 
