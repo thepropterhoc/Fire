@@ -93,7 +93,7 @@ for x, y in zip(X_train, map(classForContinuous, y_train)):
 			severelyMissed += 1
 	total += 1
 
-print '{0} Correct predictions\n{5} Incorrect predictions\n{1} False Positives (Predicted fire but actually not)\n{2} False Negatives (Predicted no fire, actually was)\n{3} Near misses (Off by 1 class)\n{4} Severe misses (off by more than 1 class)'.format(correct, falsePositives, falseNegatives, barelyMissed, severelyMissed, incorrect)
+print '{0} Correct predictions\n{5} Incorrect predictions\n{1} False Positives (Predicted fire but actually not)\n{2} False Negatives (Predicted no fire, actually was)\n{3} Near misses (Off by 1 class)\n{4} Severe misses (Off by more than 1 class)'.format(correct, falsePositives, falseNegatives, barelyMissed, severelyMissed, incorrect)
 	
 
 
