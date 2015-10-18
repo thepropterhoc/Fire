@@ -1,6 +1,8 @@
 # Fire
 An example of a more thorough look into predicting fires in northeast Portugal.
 
+![](http://www.reactiongifs.us/wp-content/uploads/2013/06/fire_community.gif)
+
 Find the dataset used [here](http://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/) and the starting code for SKLearn [here](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html)
 
 
