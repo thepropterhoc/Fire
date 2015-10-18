@@ -1,9 +1,13 @@
+
+
 from sklearn import svm
 import csv
 import numpy as np
 from sklearn import cross_validation
 import math
 import random
+
+print "\nBeginning prediction\n"
 
 def classForContinuous(val):
 	parsed = (10 ** val) - 1
@@ -75,7 +79,6 @@ correct, incorrect, falseNegatives, falsePositives, barelyMissed, severelyMissed
 
 for x, y in zip(X_train, map(classForContinuous, y_train)):
 	prediction = classForContinuous(clf.predict(x)[0])
-	print y, prediction
 	if y == prediction:
 		correct += 1
 	else:
@@ -85,7 +88,6 @@ for x, y in zip(X_train, map(classForContinuous, y_train)):
 		elif y == 0 and prediction > 0:
 			falsePositives += 1
 		elif int(math.fabs(y - prediction)) < 2:
-			print 'Found near miss for values ', y, prediction
 			barelyMissed += 1
 		else:
 			severelyMissed += 1
@@ -93,4 +95,7 @@ for x, y in zip(X_train, map(classForContinuous, y_train)):
 
 print '{0} Correct predictions\n{5} Incorrect predictions\n{1} False Positives (Predicted fire but actually not)\n{2} False Negatives (Predicted no fire, actually was)\n{3} Near misses (Off by 1 class)\n{4} Severe misses (off by more than 1 class)'.format(correct, falsePositives, falseNegatives, barelyMissed, severelyMissed, incorrect)
 	
-#clf.score(X_test, y_test)  
+
+
+
+#This code was created and edited by Shelby Vanhooser
