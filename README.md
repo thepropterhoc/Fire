@@ -6,10 +6,10 @@ Find the dataset used [here](http://archive.ics.uci.edu/ml/machine-learning-data
 
 _Requirements_ 
 
-*Python 2.7.x
-*[SKLearn](http://scikit-learn.org/stable/install.html)
-*[Numpy](http://www.scipy.org/Installing_SciPy) _"Shouldn't you already have that installed?"_
-*For the love of god, an OSX machine
+* Python 2.7.x
+* [SKLearn](http://scikit-learn.org/stable/install.html)
+* [Numpy](http://www.scipy.org/Installing_SciPy) _"Shouldn't you already have that installed?"_
+* For the love of god, an OSX machine
 
 **Special thanks to Cortez and Morais for their data collection and work as well as the UCI Machine Learning Repository**
 
