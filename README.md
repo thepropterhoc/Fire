@@ -11,7 +11,7 @@ _Requirements_
 * Python 2.7.x
 * [SKLearn](http://scikit-learn.org/stable/install.html)
 * [Numpy](http://www.scipy.org/Installing_SciPy) _"Shouldn't you already have that installed?"_
-* For the love of god, an OSX machine
+* For the love of god, an OS X machine
 
 **Special thanks to Cortez and Morais for their data collection and work as well as the UCI Machine Learning Repository**
 
